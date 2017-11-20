@@ -5,18 +5,19 @@ $ff-s: 'Merriweather', serif;
 $ff-ss: 'Six Caps', sans-serif;
 
 // font weight
-$ff-n: 400;
-$ff-b: 900;
+$fw-n: 400;
+$fw-b: 900;
 
 // letter spacing
 $letter-spacing: 10px;
 
 // mixins
-@mixin sans-serif($fs, $ls: .3em, $color: $dark-gray, $tt: uppercase, $lh: 1) {
+@mixin sans-serif($fs, $ls: .15em, $color: $dark-gray, $tt: uppercase, $lh: 1) {
   font-size: $fs;
   letter-spacing: $ls;
   color: $color;
   text-transform: $tt;
   line-height: $lh;
   font-family: $ff-ss;
+  font-weight: $fw-n;
 }
