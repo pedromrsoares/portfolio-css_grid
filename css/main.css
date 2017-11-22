@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps");
+@import url("https://fonts.googleapis.com/css?family=Average|Fjalla+One");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -392,9 +392,9 @@ template {
 
 body {
   color: #a7a7a7;
-  font-family: "Merriweather", serif;
+  font-family: "Average", serif;
   line-height: 1.6;
-  background: #fff;
+  background: #FFF;
   font-size: .875rem; }
 
 img {
@@ -405,17 +405,17 @@ h1, h2, p {
   margin-bottom: 1em; }
 
 h1 {
-  color: #03afc2;
+  color: #E7DFC6;
   line-height: 1;
   font-size: 3.125rem; }
 
 h2 {
   font-size: 2rem;
-  letter-spacing: 0.15em;
-  color: #606060;
+  letter-spacing: 0.1em;
+  color: #131B23;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Six Caps", sans-serif;
+  font-family: "Fjalla One", sans-serif;
   font-weight: 400; }
 
 .welcome {
@@ -424,39 +424,41 @@ h2 {
   background-position: center;
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center; }
   .welcome h1 {
-    font-size: 1.5rem;
+    margin-top: 15vh;
+    font-size: 2.5rem;
     font-weight: 400;
-    color: #223843;
+    color: #FFF;
     line-height: 2;
     text-align: center; }
+    @media (max-width: 575px) {
+      .welcome h1 {
+        font-size: 1.5rem; } }
     .welcome h1 span {
       display: block;
       font-size: 5.5rem;
-      letter-spacing: 0.15em;
-      color: #03afc2;
+      letter-spacing: 0.1em;
+      color: #E7DFC6;
       text-transform: uppercase;
       line-height: 1;
-      font-family: "Six Caps", sans-serif;
+      font-family: "Fjalla One", sans-serif;
       font-weight: 400; }
-    .welcome h1::before, .welcome h1::after {
-      content: '';
-      display: block;
-      height: 1px;
-      width: 60%;
-      background: #223843; }
-    .welcome h1::before {
-      margin: 0 auto 2em; }
-    .welcome h1::after {
-      margin: 2em auto 0; }
+      @media (max-width: 575px) {
+        .welcome h1 span {
+          font-size: 3rem;
+          letter-spacing: 0.1em;
+          color: #E7DFC6;
+          text-transform: uppercase;
+          line-height: 1;
+          font-family: "Fjalla One", sans-serif;
+          font-weight: 400; } }
 
 .intro {
   display: flex;
   color: rgba(255, 255, 255, 0.7); }
   .intro h2 {
-    color: #fff; }
+    color: #FFF; }
     .intro h2::after {
       content: '';
       height: 1px;
@@ -483,6 +485,11 @@ h2 {
   min-height: 100%;
   min-width: 100%;
   display: block; }
+
+.about {
+  background-image: url(../img/pedro-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .about-me {
   width: 90%;
@@ -549,8 +556,8 @@ h2 {
     left: 0;
     bottom: 0;
     padding: 2em;
-    background: rgba(3, 175, 194, 0.75);
-    color: #fff;
+    background: rgba(231, 223, 198, 0.75);
+    color: #FFF;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -560,7 +567,7 @@ h2 {
     top: 0; }
 
 .portfolio-title {
-  color: #fff;
+  color: #FFF;
   font-size: 2.5rem;
   margin-bottom: auto; }
 
@@ -568,11 +575,10 @@ h2 {
   display: none; }
 
 .portfolio-link {
-  color: #fff;
-  font-weight: 900;
+  color: #FFF;
   font-size: 1.1rem;
   text-decoration: none;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #FFF;
   align-self: flex-start; }
   .portfolio-link::after {
     content: url(../img/arrow.svg);
@@ -592,3 +598,70 @@ h2 {
     font-size: 5rem; }
   .featured .portfolio-desc {
     display: block; } }
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em;
+  padding: 5em 0; }
+  .contact h1 {
+    text-align: center; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #131B23; }
+
+input, textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: .75em;
+  width: 100%;
+  background: #f6f6f7;
+  border: 1px solid #e8e9eb;
+  font-size: 1.2rem; }
+
+.button {
+  display: inline-block;
+  width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  background: #E7DFC6;
+  border: none;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  color: #FFF;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  padding: .6em 1.5em; }
+
+footer {
+  background: #223843;
+  padding: 5em 0;
+  text-align: center; }
+
+.social-icons {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 15em;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.75em auto 4em; }
+
+.social-icon {
+  width: 25%;
+  height: 25%; }
+
+.copyright::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 4em auto;
+  width: 25%; }

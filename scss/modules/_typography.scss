@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps');
+//@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps'); fonts used from kevin powell
+@import url('https://fonts.googleapis.com/css?family=Average|Fjalla+One');
 
 // font family
-$ff-s: 'Merriweather', serif;
-$ff-ss: 'Six Caps', sans-serif;
+$ff-s: 'Average', serif;
+$ff-ss: 'Fjalla One', sans-serif;
 
 // font weight
 $fw-n: 400;
-$fw-b: 900;
+//$fw-b: 900;
 
 // letter spacing
 $letter-spacing: 10px;
 
 // mixins
-@mixin sans-serif($fs, $ls: .15em, $color: $dark-gray, $tt: uppercase, $lh: 1) {
+@mixin sans-serif($fs, $ls: .1em, $color: $dark-gray, $tt: uppercase, $lh: 1) {
   font-size: $fs;
   letter-spacing: $ls;
   color: $color;

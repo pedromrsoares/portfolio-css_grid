@@ -1,3 +1,9 @@
+.about {
+  background-image: url(../img/pedro-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .about-me {
   @include container;
   @include clearfix;
